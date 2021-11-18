@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <script src="https://kit.fontawesome.com/17eeeed2b0.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+        }
+
+        .parent {
+            display: flex;
+        }
+
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            width: 1200px;
+            height: 100vh;
+            background-color: rgb(19, 18, 18);
+        }
+
+
+
+        #ab {
+            flex-direction: column;
+            height: 100px;
+            width: 100px;
+            border: 8px solid #303236;
+            border-radius: 100%;
+            justify-content: center;
+            justify-items: center;
+            margin: 30px auto;
+        }
+
+        .about h1 {
+            color: dodgerblue;
+            border-bottom: skyblue solid 2px;
+            width: max-content;
+        }
+
+        .icons {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            color: white;
+            margin-top: 10px;
+            padding: 0 60px;
+        }
+
+        .icons .fab {
+            background-color: #303236;
+            padding: 10px;
+            border-radius: 100%;
+        }
+
+        .subparent {
+            display: flex;
+            flex-direction: column;
+            padding-left: 20px;
+        }
+
+        .photo {
+            flex-direction: row;
+        }
+
+        .list {
+            list-style: none;
+            justify-content: center;
+        }
+
+        .list a {
+            text-decoration: none;
+            padding: 2px;
+            margin-right: 4px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .list li a {
+            color: #5a6069;
+        }
+
+        .list li a span {
+            margin-left: 10px;
+        }
+
+        .list li {
+            margin-bottom: 20px;
+        }
+
+        .list li a:hover {
+            color: whitesmoke;
+        }
+
+        #ic {
+            margin-right: 2px;
+        }
+
+
+        .file {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .description {
+            flex-direction: column;
+        }
+
+        .table {
+            display: flex;
+            justify-content: space-between;
+
+        }
+
+        .name {
+            color: white;
+            margin: 0 auto;
+        }
+
+        .profile {
+            height: 270px;
+            padding: 30px;
+        }
+
+        .pointer {
+            color: blue;
+        }
+
+        .copyright {
+            color: white;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="sidebar">
+            <img src="aFFF1uw.png" id="ab" alt="">
+            <h2 class="name">Alex Smith</h2>
+            <div class="icons">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook-f"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-skype"></i>
+                <i class="fab fa-linkedin-in"></i>
+            </div>
+            <ul class="list">
+                <li><a href=""><i class="fas fa-home" id="ic"></i><span>Home</span></a></li>
+                <li><a href=""><i class="fas fa-user" id="ic"></i><span>About</span></a></li>
+                <li><a href=""><i class="far fa-file" id="ic"></i><span>Resume</span></a></li>
+                <li><a href=""><i class="fas fa-book" id="ic"></i><span>Portfolio</span></a></li>
+                <li><a href=""><i class="fas fa-ellipsis-h" id="ic"></i><span>Services</span></a></li>
+            </ul>
+            <div class="copyright">
+                <span>&copy; Copyright <b>iPortfolio</b></span>
+                <span>Designed By Utkarsh</span>
+            </div>
+        </div>
+        <div class="subparent">
+            <div class="about">
+                <h1>About</h1>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam omnis dolore doloremque quos harum ea
+                    voluptatem, soluta veritatis neque sed nam, repellat labore minima pariatur explicabo maiores
+                    consequatur quas! Repudiandae!</p>
+            </div>
+            <div class="container">
+                <img src="aFFF1uw.png" class="profile" alt="">
+                <div class="file">
+                    <h2>UI/UX Designer & Web Developer.</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maiores, in delectus ducimus
+                        temporibus ad fuga obcaecati! </p>
+                    <div class="table">
+                        <div>
+                            <p><span class="pointer">&gt;</span><b>Birthday:</b>1 May 1995</p>
+                            <p><span class="pointer">&gt;</span><b>Website:</b>www.example.com</p>
+                            <p><span class="pointer">&gt;</span><b>Phone:</b>+1234567890</p>
+                            <p><span class="pointer">&gt;</span><b>City:</b>New York, USA</p>
+                        </div>
+                        <div>
+                            <p><span class="pointer">&gt;</span><b>Age:</b>30</p>
+                            <p><span class="pointer">&gt;</span><b>Degree:</b>Master</p>
+                            <p><span class="pointer">&gt;</span><b>PhEmailone:</b>email@example.com</p>
+                            <p><span class="pointer">&gt;</span><b>Freelance:</b>Available</p>
+                        </div>
+                    </div>
+                    <div class="details">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae maiores et aspernatur, sit iusto
+                        ipsam
+                        maxime accusantium autem nisi praesentium reiciendis, tenetur at, magni incidunt reprehenderit
+                        nemo a
+                        iste nesciunt!
+                        Aut eius, corrupti ut explicabo fuga, impedit obcaecati accusantium atque earum ipsum, ad
+                        assumenda
+                        voluptas inventore! Quasi iste reprehenderit voluptatibus veritatis quis nesciunt qui dicta
+                        maiores.
+                        Quis quas veritatis explicabo.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
